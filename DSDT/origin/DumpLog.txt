@@ -1,0 +1,107 @@
+34:560  30:309  Found BIOS RSDP at F0000
+34:560  0:000  Printing ACPI tables from RSDP F0000 ...
+34:560  0:000   F0000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+34:560  0:000    (Xsdt: CA867078, Rsdt: CA867028)
+34:560  0:000    CA867078: 'XSDT', 'Notebook', Rev: 1, Len: 116
+34:560  0:000    CA867028: 'RSDT', 'Notebook', Rev: 1, Len: 76
+34:560  0:000    Tables in Xsdt: 10
+34:560  0:000    0. CA87A6F0: 'FACP', 'Notebook', Rev: 5, Len: 268
+34:560  0:000        (Dsdt: CA867188, Facs: CA892080, XDsdt: CA867188, XFacs: 0)
+34:560  0:000        CA867188: 'DSDT', 'Notebook', Rev: 2, Len: 79208
+34:563  0:002        CA892080: 'FACS', Ver: 2, Len: 64
+34:563  0:000    1. CA87A800: 'APIC', 'Notebook', Rev: 3, Len: 114
+34:563  0:000    2. CA87A878: 'FPDT', 'Notebook', Rev: 1, Len: 68
+34:563  0:000    3. CA87A8C0: 'ECDT', 'Notebook', Rev: 1, Len: 193
+34:563  0:000    4. CA87A988: 'MCFG', 'Notebook', Rev: 1, Len: 60
+34:563  0:000    5. CA87A9C8: 'HPET', 'Notebook', Rev: 1, Len: 56
+34:563  0:000    6. CA87AA00: 'SSDT', 'AhciTab1', Rev: 1, Len: 1586
+34:563  0:000    7. CA87B038: 'SSDT', 'AhciTab2', Rev: 1, Len: 1182
+34:563  0:000    8. CA87B4D8: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2314
+34:563  0:000    9. CA87BDE8: 'SSDT', 'CpuPm', Rev: 1, Len: 2840
+34:563  0:000    Tables in Rsdt: 10
+34:563  0:000    0. CA867100: 'FACP', 'Notebook', Rev: 2, Len: 132
+34:563  0:000        (Dsdt: CA867188, Facs: CA892040)
+34:563  0:000        CA867188: 'DSDT', 'Notebook', Rev: 2, Len: 79208
+34:566  0:002        CA892040: 'FACS', Ver: 0, Len: 64
+34:566  0:000    1. CA87A800: 'APIC', 'Notebook', Rev: 3, Len: 114
+34:566  0:000    2. CA87A878: 'FPDT', 'Notebook', Rev: 1, Len: 68
+34:566  0:000    3. CA87A8C0: 'ECDT', 'Notebook', Rev: 1, Len: 193
+34:566  0:000    4. CA87A988: 'MCFG', 'Notebook', Rev: 1, Len: 60
+34:566  0:000    5. CA87A9C8: 'HPET', 'Notebook', Rev: 1, Len: 56
+34:566  0:000    6. CA87AA00: 'SSDT', 'AhciTab1', Rev: 1, Len: 1586
+34:566  0:000    7. CA87B038: 'SSDT', 'AhciTab2', Rev: 1, Len: 1182
+34:566  0:000    8. CA87B4D8: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2314
+34:566  0:000    9. CA87BDE8: 'SSDT', 'CpuPm', Rev: 1, Len: 2840
+34:566  0:000  Found UEFI Acpi 2.0 RSDP at CA867000
+34:566  0:000  Saving ACPI tables from RSDP CA867000 to EFI\CLOVER\ACPI\origin ...
+34:566  0:000   CA867000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+34:943  0:376    (Xsdt: CA867078, Rsdt: CA867028)
+34:943  0:000    CA867078: 'XSDT', 'Notebook', Rev: 1, Len: 116 -> XSDT.aml
+34:947  0:004    CA867028: 'RSDT', 'Notebook', Rev: 1, Len: 76 -> RSDT.aml
+34:951  0:004    Tables in Xsdt: 10
+34:951  0:000    0. CA87A6F0: 'FACP', 'Notebook', Rev: 5, Len: 268 -> FACP.aml
+34:956  0:004        (Dsdt: CA867188, Facs: CA892080, XDsdt: CA867188, XFacs: 0)
+34:956  0:000        CA867188: 'DSDT', 'Notebook', Rev: 2, Len: 79208 -> DSDT.aml
+34:969  0:013        CA892080: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+34:974  0:004    1. CA87A800: 'APIC', 'Notebook', Rev: 3, Len: 114 -> APIC.aml
+34:978  0:004    2. CA87A878: 'FPDT', 'Notebook', Rev: 1, Len: 68 -> FPDT.aml
+34:983  0:004    3. CA87A8C0: 'ECDT', 'Notebook', Rev: 1, Len: 193 -> ECDT.aml
+34:987  0:004    4. CA87A988: 'MCFG', 'Notebook', Rev: 1, Len: 60 -> MCFG.aml
+34:991  0:004    5. CA87A9C8: 'HPET', 'Notebook', Rev: 1, Len: 56 -> HPET.aml
+34:996  0:004    6. CA87AA00: 'SSDT', 'AhciTab1', Rev: 1, Len: 1586 -> SSDT-0-AhciTab1.aml
+35:001  0:004    7. CA87B038: 'SSDT', 'AhciTab2', Rev: 1, Len: 1182 -> SSDT-1-AhciTab2.aml
+35:005  0:004    8. CA87B4D8: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2314 -> SSDT-2-Cpu0Ist.aml
+35:010  0:004    9. CA87BDE8: 'SSDT', 'CpuPm', Rev: 1, Len: 2840 -> SSDT-3-CpuPm.aml (Found hidden SSDT 4 pcs)
+35:014  0:004        * C863B018: 'SSDT', 'CpuPm', Rev: 1, Len: 2840  53 53 44 54 18 0B 00 00 01 8D 50 6D 52 65 66 00 Internal length = 2840 -> SSDT-x3_0-CpuPm.aml
+35:061  0:047        * CA5C3A98: 'SSDT', 'ApIst', Rev: 1, Len: 771  53 53 44 54 03 03 00 00 01 76 50 6D 52 65 66 00 Internal length = 771 -> SSDT-x3_1-ApIst.aml
+35:066  0:004        * CA5C2018: 'SSDT', 'Cpu0Cst', Rev: 1, Len: 2131  53 53 44 54 53 08 00 00 01 9D 50 6D 52 65 66 00 Internal length = 2131 -> SSDT-x3_2-Cpu0Cst.aml
+35:070  0:004        * CA5C4C18: 'SSDT', 'ApCst', Rev: 1, Len: 281  53 53 44 54 19 01 00 00 01 EC 50 6D 52 65 66 00 Internal length = 281 -> SSDT-x3_3-ApCst.aml
+35:075  0:004  
+35:075  0:000    Tables in Rsdt: 10
+35:075  0:000    0. CA867100: 'FACP', 'Notebook', Rev: 2, Len: 132 -> RSDT-FACP.aml
+35:079  0:004        (Dsdt: CA867188, Facs: CA892040)
+35:079  0:000        CA867188: 'DSDT', 'Notebook', Rev: 2, Len: 79208
+35:082  0:002        CA892040: 'FACS', Ver: 0, Len: 64 -> RSDT-FACS.aml
+35:087  0:005    1. CA87A800: 'APIC', 'Notebook', Rev: 3, Len: 114
+35:087  0:000    2. CA87A878: 'FPDT', 'Notebook', Rev: 1, Len: 68
+35:087  0:000    3. CA87A8C0: 'ECDT', 'Notebook', Rev: 1, Len: 193
+35:087  0:000    4. CA87A988: 'MCFG', 'Notebook', Rev: 1, Len: 60
+35:087  0:000    5. CA87A9C8: 'HPET', 'Notebook', Rev: 1, Len: 56
+35:087  0:000    6. CA87AA00: 'SSDT', 'AhciTab1', Rev: 1, Len: 1586
+35:087  0:000    7. CA87B038: 'SSDT', 'AhciTab2', Rev: 1, Len: 1182
+35:087  0:000    8. CA87B4D8: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2314
+35:087  0:000    9. CA87BDE8: 'SSDT', 'CpuPm', Rev: 1, Len: 2840
+35:087  0:000  Found UEFI Acpi 1.0 RSDP at CA867000
+35:087  0:000  Printing ACPI tables from RSDP CA867000 ...
+35:087  0:000   CA867000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+35:087  0:000    (Xsdt: CA867078, Rsdt: CA867028)
+35:087  0:000    CA867078: 'XSDT', 'Notebook', Rev: 1, Len: 116
+35:087  0:000    CA867028: 'RSDT', 'Notebook', Rev: 1, Len: 76
+35:087  0:000    Tables in Xsdt: 10
+35:087  0:000    0. CA87A6F0: 'FACP', 'Notebook', Rev: 5, Len: 268
+35:087  0:000        (Dsdt: CA867188, Facs: CA892080, XDsdt: CA867188, XFacs: 0)
+35:087  0:000        CA867188: 'DSDT', 'Notebook', Rev: 2, Len: 79208
+35:090  0:002        CA892080: 'FACS', Ver: 2, Len: 64
+35:090  0:000    1. CA87A800: 'APIC', 'Notebook', Rev: 3, Len: 114
+35:090  0:000    2. CA87A878: 'FPDT', 'Notebook', Rev: 1, Len: 68
+35:090  0:000    3. CA87A8C0: 'ECDT', 'Notebook', Rev: 1, Len: 193
+35:090  0:000    4. CA87A988: 'MCFG', 'Notebook', Rev: 1, Len: 60
+35:090  0:000    5. CA87A9C8: 'HPET', 'Notebook', Rev: 1, Len: 56
+35:090  0:000    6. CA87AA00: 'SSDT', 'AhciTab1', Rev: 1, Len: 1586
+35:090  0:000    7. CA87B038: 'SSDT', 'AhciTab2', Rev: 1, Len: 1182
+35:090  0:000    8. CA87B4D8: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2314
+35:090  0:000    9. CA87BDE8: 'SSDT', 'CpuPm', Rev: 1, Len: 2840
+35:090  0:000    Tables in Rsdt: 10
+35:090  0:000    0. CA867100: 'FACP', 'Notebook', Rev: 2, Len: 132
+35:090  0:000        (Dsdt: CA867188, Facs: CA892040)
+35:090  0:000        CA867188: 'DSDT', 'Notebook', Rev: 2, Len: 79208
+35:093  0:002        CA892040: 'FACS', Ver: 0, Len: 64
+35:093  0:000    1. CA87A800: 'APIC', 'Notebook', Rev: 3, Len: 114
+35:093  0:000    2. CA87A878: 'FPDT', 'Notebook', Rev: 1, Len: 68
+35:093  0:000    3. CA87A8C0: 'ECDT', 'Notebook', Rev: 1, Len: 193
+35:093  0:000    4. CA87A988: 'MCFG', 'Notebook', Rev: 1, Len: 60
+35:093  0:000    5. CA87A9C8: 'HPET', 'Notebook', Rev: 1, Len: 56
+35:093  0:000    6. CA87AA00: 'SSDT', 'AhciTab1', Rev: 1, Len: 1586
+35:093  0:000    7. CA87B038: 'SSDT', 'AhciTab2', Rev: 1, Len: 1182
+35:093  0:000    8. CA87B4D8: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 2314
+35:093  0:000    9. CA87BDE8: 'SSDT', 'CpuPm', Rev: 1, Len: 2840

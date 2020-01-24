@@ -1,0 +1,58 @@
+#!/bin/bash
+# ALL Credits to Pike R Alpha
+Blue="\e[34;1m"
+Normal="\033[0m\n"
+Red="\e[31;1m"
+Green="\e[32;1;5m"
+clear
+if ping  -q -c 1 -W 1 google.com >/dev/null; then
+rm -Rf cd ~/Library/ssdtPRgen
+curl -o ~/ssdtPRGen.sh --silent https://raw.githubusercontent.com/Piker-Alpha/ssdtPRGen.sh/Beta/ssdtPRGen.sh
+chmod +x ~/ssdtPRGen.sh
+clear
+printf "$Green ALL Credits to Pike R. Alpha $Normal "
+echo ""
+printf "$Blue Welcome `users` to SSDTprgen Automator... $Normal"
+echo ""
+echo " Made by Gengik84"
+echo "************************************************"
+echo ""
+printf "\033[0;1mMenù:\n"
+echo " Press [1] To generate the SSDT for Stock CPU Frequencies"
+echo " Press [2] To choose the frequencies of the SSDT (for Overclocked CPUs)"
+else
+	clear
+	echo "********************************************"
+	printf "$Red Error !!! $Normal"
+	printf "$Red Please.. check your internet connection ! $Normal"
+	echo "********************************************"
+echo ""
+	exit
+fi
+read choice
+if [[ $choice == 1 ]]; then
+	~/ssdtPRGen.sh
+ elif [[ $choice == 2 ]]; then
+	 clear
+	 printf "\033[0;1m---->  Overclock Frequencies Examples:\n"
+	 echo ""
+	 echo " 3500"
+	 echo " 4000"
+	 echo " 4250"
+	 echo "-----------------------------------"
+	 printf "$Red Please type the Mhz frequency you are using on your BIOS$Normal"
+	 	 read turbo
+	 ./ssdtPRGen.sh  -turbo $turbo
+ fi
+cd ~/desktop
+mkdir Power_Management
+cd ~/Library/ssdtPRGen
+cp -R  SSDT.aml ~/desktop/Power_Management
+echo ""
+printf "$Green----------------------------------------------------------------$Normal"
+printf "$Red Your SSDT is ready\n"
+printf " It's on the Power_Management's folder on your Desktop\n"
+printf " Copy ssdt.aml to EFI/clover/acpi/patched\n"
+echo " Disable C & P states, if enabled, on the config.plist.. "
+echo ""
+printf "$Green----------------------------------------------------------------$Normal"
