@@ -3,7 +3,7 @@
 <img src="https://www.asus.com/media/global/products/KpjZW125TsOGRbzp/holdx2gTB2fmC2E0_500.jpg" alt="asus" align="center">
  Specs :
 
-- [x] <b>Model Laptop</b>: Asus A455LF-WX039D Series
+- [x] <b>Model Laptop</b>: Asus X451CA Series
 - [x] <b>Processor</b>: Intel® Core™ i3 3217U (IvyBridge)
 - [x] <b>Graphics</b>: Intel HD Graphics 4000 (IvyBridge) HDMI
 - [x] <b>RAM</b>: 4 GB 1600 MHz DDR3
