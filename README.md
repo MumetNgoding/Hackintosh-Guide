@@ -1,4 +1,16 @@
 # Hackintosh-Guide
+
+### You can give me a cup of coffee :) : 
+- Bitcoin : 3Hz6QVak8tYo7x84i8t3WA3BZoSmtv2Yzu
+- Ethereum or Erc20 Token : 0xaabeF4Fb5902950503c2d9a87396D7389DA734c5
+- Doge : DTk6Pyo1mLBxkhnhLAfNpyWsarV3EkwLco
+- Ovo By Message on Facebook
+- Dana By Message on Facebook
+
+### You can Find me in Facebook : 
+- [Nugroho](www.facebook.com/pwnable)
+
+
 # Hackintosh-ASUS-X451CA-Notebook
 <img src="https://www.asus.com/media/global/products/KpjZW125TsOGRbzp/holdx2gTB2fmC2E0_500.jpg" alt="asus" align="center">
  Specs :
