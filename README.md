@@ -25,3 +25,13 @@
 - [x] <b>Ethernet</b>: Realtek RTL81xE 
 - [x] <b>Camera</b>: HD Web Camera 
 - [x] <b>Interface</b>: 1 x COMBO audio jack, 1 x USB 3.0 port(s), 1 x USB 2.0 port(s), 1 x RJ45 LAN Jack for LAN insert, 1 x HDMI, 1 x SD card reader, 1X AC adapter plug ..
+
+## ChangeLog V.1.0 :
+
+- [x] Update Configuration Config.plist
+- [x] Update Configuration CPU PowerManagement
+- [x] Update Clover Version 5070
+- [x] Update Configuration DSDT for Native All USB Port
+- [x] Added Folder Inject CPU
+- [x] Added Boot Args (using -xcpm)
+- [x] Native All USB Port without Kext or Injector (Remove USBInjectAll.kext)
