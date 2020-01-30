@@ -32,6 +32,6 @@
 - [x] Update Configuration CPU PowerManagement
 - [x] Update Clover Version 5070
 - [x] Update Configuration DSDT for Native All USB Port
-- [x] Added Folder Inject CPU
-- [x] Added Boot Args (using -xcpm)
+- [x] Add Folder Inject CPU
+- [x] Add Boot Args (using -xcpm)
 - [x] Native All USB Port without Kext or Injector (Remove USBInjectAll.kext)
