@@ -54,13 +54,15 @@
 			<key>Fixes</key>
 			<dict>
 				<key>AddHDMI</key>
-				<false/>
+				<true/>
 				<key>Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
 				<key>FixHPET</key>
 				<false/>
 				<key>FixIPIC</key>
 				<false/>
+				<key>FixIntelGfx</key>
+				<true/>
 				<key>FixRTC</key>
 				<false/>
 				<key>FixTMR</key>
@@ -182,7 +184,7 @@
 					<key>Comment</key>
 					<string>change XHC1 to XHC</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>V0VoRE1R</data>
 					<key>Replace</key>
@@ -190,6 +192,8 @@
 				</dict>
 			</array>
 		</dict>
+		<key>DisableASPM</key>
+		<true/>
 		<key>DropTables</key>
 		<array>
 			<dict>
@@ -200,20 +204,14 @@
 				<key>Signature</key>
 				<string>DMAR</string>
 			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>CpuPm</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>Cpu0Ist</string>
-			</dict>
 		</array>
 		<key>FixHeaders</key>
+		<true/>
+		<key>FixMCFG</key>
+		<true/>
+		<key>HaltEnabler</key>
+		<true/>
+		<key>PatchAPIC</key>
 		<true/>
 		<key>SSDT</key>
 		<dict>
@@ -241,11 +239,21 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>kext-dev-mode=1 dart=0 -igfxnohdmi</string>
+		<string>kext-dev-mode=1 dart=0 -xcpm</string>
+		<key>DefaultVolume</key>
+		<string>Mojave</string>
+		<key>Legacy</key>
+		<string>PBR</string>
+		<key>NeverDoRecovery</key>
+		<true/>
 		<key>NeverHibernate</key>
+		<true/>
+		<key>NoEarlyProgress</key>
 		<true/>
 		<key>Secure</key>
 		<false/>
+		<key>SkipHibernateTimeout</key>
+		<true/>
 		<key>Timeout</key>
 		<integer>5</integer>
 	</dict>
@@ -598,6 +606,70 @@
 				<key>Replace</key>
 				<data>MAAAAAIFAAAACAAABgAAAA==</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port Limit Patch 1 PMHeart/DalianSky</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>g/sPDw==</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IOUSBHostFamily</string>
+				<key>Replace</key>
+				<data>g/s/Dw==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port Limit Patch 2 PMHeart/DalianSky</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>g+MP0w==</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IOUSBHostFamily</string>
+				<key>Replace</key>
+				<data>g+M/0w==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port Limit Patch 3 PMHeart/DalianSky</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>g/sPDw==</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>g/s/Dw==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port Limit Patch 4 PMHeart/DalianSky</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>g/8PDw==</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>g/8/Dw==</data>
+			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
@@ -606,6 +678,8 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
+		<key>ROM</key>
+		<string>UseMacAddr0</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -658,6 +732,8 @@
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
+		<key>CustomUUID</key>
+		<string>0A6E6786-2045-47E3-B094-6F585679E512</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
 	</dict>
